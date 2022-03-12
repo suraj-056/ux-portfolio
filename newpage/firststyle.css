@@ -1,0 +1,767 @@
+ *{
+     margin: 0%;
+     padding: 0%;
+ }
+
+ #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  #mybtn i{
+      color: white;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+
+ html {font-size: 100%;} /*16px*/
+ 
+ body {
+   background: white;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 1.75;
+   color: #000000;
+ }
+ 
+ p {margin-bottom: 1rem; color: #919191;}
+ 
+ h1, h2, h3, h4, h5 {
+   margin: 3rem 0 1.38rem;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 1.3;
+ }
+ 
+ h1 {
+   margin-top: 0;
+   font-size: 5.653rem;
+ }
+ 
+ h2 {font-size: 3.998rem;}
+ 
+ h3 {font-size: 2.827rem;}
+ 
+ h4 {font-size: 1.999rem;}
+ 
+ h5 {font-size: 1.414rem;}
+ 
+ small, .text_small {font-size: 0.707rem;}
+
+
+
+
+
+
+
+
+
+
+
+ .banner{
+    width: 100%;
+    height: 40%;
+    background-image: url("./Images/Stay.jpg");
+    background-size: cover;
+}
+nav{
+    margin-left: 20%;
+    
+}
+.nav a{
+    /* font-size: 1.2rem; */
+    font-weight: bold;
+    color: black
+}
+
+.text{
+    display: flex;
+    position: relative;
+    top: 60%;
+    color: white;
+    justify-content: space-evenly;
+    /* left: 20%; */
+}
+.text-mobile{
+    display: none;
+}
+.challenges h1{
+    
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 3.1rem;
+     font-weight: 500;
+}
+.challenges p, .challenge li{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 400;
+    opacity: 80%;
+     line-break: 1.5; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+
+main{
+    width: 80%;
+    height: fit-content;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.challenges{
+    display: flex;
+}
+.vision{
+    width: 50%;
+     
+}
+.challenge{
+    width: 50%;
+    float: right;
+}
+.image{
+    width: 100%;
+    /* margin-top: 20%; */
+    height: 100vh;
+}
+.image img{
+    width: 100%;
+}
+.kickstart{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+.kickstart-text{
+    width: 50%;
+     
+}
+.kickstart-image{
+    width: 50%;
+    float: right;
+    /* background-color: beige; */
+}
+.kickstart-image img{
+    width: 100%;
+    height: auto;
+}  
+.competitive{
+    width: 100%;
+    height: 100vh;
+    margin: 0% 0% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.competitive-text{
+    width: 60%;
+    height: 50%;
+}
+
+.competitive-image{
+    margin-top: 10%;
+    width: 100%;
+    height: 50%;
+}
+.competitive-image img{
+    width: 100%;
+    height: 100%;
+}
+.persona{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    /* column-gap: 5rem; */
+    margin-top: 20%;
+    flex-direction: row;
+}
+.persona img{
+    width: 50%;
+    border: 1px solid black;
+    margin-right:1%;
+    height:100%;
+}
+.infoarchietecture{
+    width: 100%;
+    margin-top: 20%;
+    height: max-content;
+}
+.info-text{
+    width: 50%;
+    height: max-content;
+    margin-bottom: 10%;
+}
+.info-image{
+    width: 100%;
+    height: max-content;
+}
+.info-image img{
+    width: 100%;
+    height: 80%;
+}
+.wireframes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wireframe-text{
+    width: 50%;
+    margin: 5% 0% 0% 0%;
+}
+.wireframe-text h1{
+    margin: 5% 0%;
+}
+
+
+.wireframes-image{
+    width: 80%;
+    margin-top: 10%;
+    height: 60vh;
+}
+.wireframes-image img{
+    width: 100%;
+    height: 100%;
+}
+.wireflow{
+    margin-top: 5%;
+}
+
+
+.wireflow img{
+    width: 100%;
+    /* margin-right: 20%;    */
+    height: auto;
+    
+}
+
+
+
+/* modal image starts here */
+
+
+.modal-target {
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .modal-target:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    opacity: 1 !important;
+    max-width: 1200px;
+  }
+  
+  /* Caption of Modal Image */
+  .modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+  }
+  
+  /* Add Animation */
+  .modal-content, .modal-caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/* modal image ends here */
+  
+
+
+.solution1,.solution2{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+}
+.solution1-text,.solution2-text{
+    width: 50%;
+    margin-left: 5%;
+    float: left;
+}
+.solution1-img,.solution2-img{
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.solution1-img video{
+    width: 100%;
+}
+.solution2-img img{
+    width: 50%;
+    height: 95%;
+}
+
+
+.solution3,.solution4{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+
+}
+.solution3-text,.solution4-text{
+    width: 50%;
+    float: right;
+    margin-right: 5%;
+}
+.solution3-img,.solution4-img{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.solution3-img img,.solution4-img img{
+    width: 50%;
+    height: 95%;
+}
+
+.bottom{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottom-text{
+    width: 50%;
+}
+.bottom-img{
+    width: 120%;
+    margin: 0%;
+    height: 100vh;
+}
+.bottom-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.takeaways{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+.takeaways-text{
+    width: 50%;
+    text-align: center;
+}
+
+footer{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icons{
+    width: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+
+.icons i{
+    color: black;
+    font-size: 2rem;
+    margin-left: 5%;
+}
+.icons i:hover{
+    color: #0645AD;
+}
+footer p{
+    text-align: center;
+}
+
+
+
+@media (max-width:600px) {
+    .banner{
+        width: 100%;
+        height: 20%;
+        background-image: url("./Images/Stay.jpg");
+        background-size: 100% 100%;
+    }
+    .text{
+        /* display: flex;
+        width: max-content;
+        flex-direction: column;
+        background-color: blue; */
+        display: none;
+      
+    }
+    .text-mobile{
+        width: 100%;
+        display: block;
+    }
+    .text-mobile h4{
+        font-size: 1rem;
+    }
+    main{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .challenges{
+        display: flex;
+        flex-direction: column;
+    }
+    .vision{
+        width: 100%;
+        margin: 10% 0%;
+         
+    }
+    .challenge{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 40%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .kickstart{
+        width: 100%;
+        margin: 10% 0%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .kickstart-text{
+        width: 100%;
+         
+    }
+    .kickstart-image{
+        width: 100%;
+        height: auto;
+    }
+    .kickstart-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .competitive{
+        width: 100%;
+        height: 100vh;
+        margin: 80% 0% 0% 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .competitive-text{
+        width: 100%;
+        height: 50%;
+    }
+    
+    .competitive-image{
+        margin-top: 50%;
+        width: 100%;
+        height: 50%;
+    }
+    .competitive-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .persona{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        margin-top: 50%;
+        flex-direction: column;
+    }
+    .persona img{
+        width: 100%;
+        height: 50vh;
+    }
+    .infoarchietecture{
+        width: 100%;
+        margin-top: 40%;
+        height: max-content;
+    }
+    .info-text{
+        width: 100%;
+        height: auto;
+    }
+    .info-image{
+        width: 100%;
+        height: 50vh;
+    }
+    .info-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .wireframes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wireframe-text{
+        width: 50%;
+        margin: 5% 0% 0% 0%;
+    }
+    .wireframe-text h1{
+        margin: 5% 0%;
+    }
+    
+    
+    .wireframes-image{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 10%;
+        height: 50vh;
+    }
+    .wireframes-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .solution1,.solution2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    
+    }
+    .solution1-text,.solution2-text{
+        width: 100%;
+        height: max-content;
+        /* float: left; */
+    }
+    .solution1-img,.solution2-img{
+        width: 100%;
+        height: 100%;
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .solution1-img video{
+        width: 100%;
+    }
+    .solution2-img img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    
+    .solution3,.solution4{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .solution3{
+        margin-top: 20%;
+    }
+    .solution3-text,.solution4-text{
+        width: 100%;
+        /* float: right; */
+    }
+    .solution3-img,.solution4-img{
+        width: 100%;
+        height: 100%;
+        /* float: left; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .solution3-img img,.solution4-img img{
+        width: 50%;
+        height: 50%;
+    }
+
+
+    .bottom{
+        width: 100%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bottom-text{
+        width: 100%;
+    }
+    .bottom-img{
+        width: 100%;
+        margin: 0%;
+        height:40%;
+    }
+    .bottom-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+        
+    .takeaways{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-content: center;
+        justify-content:center ;
+    }
+    .takeaways-text{
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons{
+        width: 50%;
+        margin-top: 5%;
+        display: flex;
+        justify-content:space-evenly ;
+    }
+
+
+    .icons i{
+        color: black;
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+    footer h4{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+}
